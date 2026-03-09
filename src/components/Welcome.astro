@@ -29,7 +29,7 @@ const themeColor = "#FEDF0A";
                 <a class="button primary" href={banner.src} download="RTI-HVACR-Brochure.png">RTI SMART HVAC-R PLANT</a>
                 
                 <div class="membership-section">
-                    <a class="button secondary" href="rti.ac.ke/" target="_blank">Railway Training Institute</a>
+                    <a class="button secondary" href="https://www.rti.ac.ke/" target="_blank">Railway Training Institute</a>
                     <a class="membership-info" href={membershipForm.src} download="2026-Membership-Drive.png">
                         <span class="info-icon">ℹ️</span>
                         <span class="info-text">Become a Member today!</span>
@@ -86,7 +86,7 @@ const themeColor = "#FEDF0A";
 
     main {
         width: 100%;
-        max-width: 900px; /* Increased slightly for the wide box */
+        max-width: 900px;
     }
 
     h1 {
@@ -119,16 +119,17 @@ const themeColor = "#FEDF0A";
     }
 
     .primary { background: var(--yellow); color: var(--black); }
+    .primary:hover { background: #e6c800; }
     .secondary { border: 2px solid var(--yellow); color: var(--yellow); background: transparent; }
+    .secondary:hover { background: rgba(254,223,10,0.08); }
 
-    /* WIDE BOX STYLING */
     .box-wide {
         margin-top: 40px;
         background: rgba(255, 255, 255, 0.05);
         padding: 25px;
         border-left: 5px solid var(--light-green);
         backdrop-filter: blur(10px);
-        width: 100%; /* Makes it use all available space in 'main' */
+        width: 100%;
         box-sizing: border-box;
     }
 
@@ -150,13 +151,12 @@ const themeColor = "#FEDF0A";
     }
 
     .fill {
-        width: 100%; /* Increased progress to show "International" reach */
+        width: 100%;
         height: 100%;
         background: var(--light-green);
         border-radius: 4px;
     }
 
-    /* Partner Logos */
     #partners { margin-bottom: 30px; }
     .partners-label { font-size: 1.2rem; color: var(--yellow); font-weight: bold; text-transform: uppercase; }
     .logo-grid { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
@@ -164,8 +164,8 @@ const themeColor = "#FEDF0A";
 
     .membership-section { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; width: 100%; }
     .membership-info { background: var(--yellow); color: var(--black); padding: 8px 16px; border-radius: 4px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 8px; }
+    .membership-info:hover { background: #e6c800; }
 
-    /* MOBILE FIXES */
     @media (max-width: 768px) {
         #container { padding: 40px 20px; justify-content: center; }
         #hero { text-align: center; }
